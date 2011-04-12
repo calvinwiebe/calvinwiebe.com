@@ -1,0 +1,29 @@
+<h1>Listing project_entries</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Technologies</th>
+    <th>Description</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @project_entries.each do |project_entry| %>
+  <tr>
+    <td><%= project_entry.name %></td>
+    <td><%= project_entry.technologies %></td>
+    <td><%= project_entry.description %></td>
+    <td><%= project_entry.comments %></td>
+    <td><%= link_to 'Show', project_entry %></td>
+    <td><%= link_to 'Edit', edit_project_entry_path(project_entry) %></td>
+    <td><%= link_to 'Destroy', project_entry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project entry', new_project_entry_path %>

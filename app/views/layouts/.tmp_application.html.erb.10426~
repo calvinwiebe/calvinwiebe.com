@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>calvinwiebe</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div id="heading-bar">
+	<span>calvinwiebe</span>
+</div>
+<div id="portfolio-items">
+	<%= link_to "about", about_path %>
+	<%= link_to "education", education_path %>
+	<%= link_to "experience", experience_path, :controller => 'experience' %>
+	<%= link_to "projects", projects_path %>
+	<%= link_to "static info", static_info_path %>
+</div>
+<%= yield %>
+
+</body>
+</html>

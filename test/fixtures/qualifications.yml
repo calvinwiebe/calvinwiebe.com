@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  school: MyString
+  time_period: MyString
+  certificate: MyString
+  description: MyString
+  comments: MyString
+
+two:
+  school: MyString
+  time_period: MyString
+  certificate: MyString
+  description: MyString
+  comments: MyString
