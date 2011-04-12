@@ -1,5 +1,5 @@
 page.select('#content-topic').each do |item|
-  item.setAttribute('style','opacity:0;')
+  item.hide
 end
 
 page.replace_html('content-topic', :partial => 'index')
