@@ -1,0 +1,242 @@
+/*
+ * Main Application Layout styles
+ */
+header, footer, aside, nav, article {
+    display: block;
+}
+
+body {
+    background-color: #f7f7ee;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: none;
+    color: black;
+}
+
+/**
+ * header
+ */
+#heading-stuff {
+    position: fixed;
+    _position: relative;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 12;
+    width: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    background-color: black;
+}
+
+#heading-bar-outer {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    vertical-align: middle;
+    padding-top: 15x;
+}
+
+#heading-name {
+    font-size: 30px;
+    font-family: "Bookman Old Style";
+    color: #808080;
+    width: 300px;
+    display: table-cell;
+    text-align: left;
+    height: 100%;
+}
+
+#portfolio-items {
+    display: table-cell;
+    width: 700px;
+    height: 100%;
+    text-align: right;
+}
+
+#portfolio-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.emphasized-name-letter {
+    font-weight: bold;
+    color: white;
+}
+
+#portfolio-items li {
+    display: inline;
+}
+
+#portfolio-items ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#portfolio-items a:hover {
+    text-decoration: none;
+    color: gray;
+    background: none;
+}
+
+/*
+ * main content
+ */
+#content {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#content-inner {
+    text-align: left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content-topic {
+    width: 100%;
+    margin-top: 150px;
+    text-align: left;
+    display: table;
+}
+
+/*
+ * Footer
+ */
+#footer-stuff {
+    position: fixed;
+    _position: relative;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    z-index: 12;
+    width: 100%;
+    vertical-align: text-bottom;
+    text-align: center;
+}
+
+#footer-bar-outer {
+    text-align: left;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: table;
+}
+
+#footer-bar-outer nav {
+    height: 100%;
+    display table-cell;
+    width:
+    700px;
+}
+
+#footer-bar-outer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    margin-top: 80px;
+}
+
+#footer-bar-outer ul li {
+    display: inline;
+    height: 150px;
+}
+
+#footer-bar-outer a {
+    font-size: 25px;
+}
+
+#footer-aside {
+    display: table-cell;
+    width: 300px;
+    text-align: right;
+}
+
+/*
+ * about
+ */
+.about-header{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.about-text{
+	background-color: #e3e3c4;
+	border: solid 1px #caca8e;	
+	padding: 10px;
+}
+.about-text-section{
+	margin-bottom: 20px;
+}
+#about-blurb {
+    display: table;
+}
+#about-blurb-section{
+	display: table-cell;
+	width: 310px;
+}
+#about-blurb-spacer{
+	display: table-cell;
+	width: 50px;
+}
+#about-blurb-aside {
+    vertical-align: top;
+    display: table-cell;
+    width: 650px;
+
+}
+#about-figure {
+    margin: 0;
+	padding: 0;
+}
+
+/*
+ * info
+ */
+#info-outer {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#info {
+    padding: 20px;
+    background-color: #e3e3c4;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
+    -webkit-border-radius: 10px; /* Safari */
+}
+
+#info ul {
+	font-size: 20px;
+    list-style: none;
+    width: 300px;
+    margin: 0 auto;
+	padding: 0;
+}
+#info ul li{
+	margin-bottom: 20px;
+}
+
+.qualification, .experience, .project {
+    margin-top: 20px;
+}
+
+/*
+ * colors
+ * 
+ * section backgrounds: #e3e3c4
+ */
