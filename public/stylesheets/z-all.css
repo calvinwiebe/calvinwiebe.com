@@ -5,8 +5,9 @@ header, footer, aside, nav, article {
     display: block;
 }
 
-body {
+html,body {
     background-color: #f7f7ee;
+	height: 100%;
 }
 
 a {
@@ -26,7 +27,7 @@ a:hover {
     _position: relative;
     top: 0;
     left: 0;
-    height: 80px;
+    height: 150px;
     z-index: 12;
     width: 100%;
     vertical-align: bottom;
@@ -40,10 +41,14 @@ a:hover {
     margin: 0 auto;
     display: table;
     position: relative;
-    vertical-align: middle;
-    padding-top: 15x;
+    vertical-align: text-bottom;
+    padding-top: 25px;
 }
-
+#header-strip{
+	width: 100%;
+	height: 25px;
+	background-color: #B5D1EA;
+}
 #heading-name {
     font-size: 30px;
     font-family: "Bookman Old Style";
@@ -53,7 +58,12 @@ a:hover {
     text-align: left;
     height: 100%;
 }
-
+#heading-name a{
+	text-decoration: none;
+}
+#heading-name a:hover{
+	background: none;
+}
 #portfolio-items {
     display: table-cell;
     width: 700px;
@@ -92,12 +102,16 @@ a:hover {
  * main content
  */
 #content {
-    margin-top: 50px;
     text-align: center;
     width: 100%;
-    height: 100%;
+	min-height: 100%;
+    margin-bottom: -150px;
+    position: relative;
 }
-
+#clearfooter{
+	height: 100px;
+   clear: both;
+}
 #content-inner {
     text-align: left;
     width: 1000px;
@@ -106,7 +120,7 @@ a:hover {
 
 #content-topic {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 250px;
     text-align: left;
     display: table;
 }
@@ -115,15 +129,13 @@ a:hover {
  * Footer
  */
 #footer-stuff {
-    position: fixed;
-    _position: relative;
-    bottom: 0;
-    left: 0;
-    height: 150px;
+    height: 100px;
     z-index: 12;
     width: 100%;
     vertical-align: text-bottom;
     text-align: center;
+	position: relative;
+	margin-bottom:50px;
 }
 
 #footer-bar-outer {
@@ -233,6 +245,24 @@ a:hover {
 
 .qualification, .experience, .project {
     margin-top: 20px;
+}
+/*
+ * intro
+ */
+#intro-outer {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#intro {
+    padding: 20px;
+    background-color: #e3e3c4;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
+    -webkit-border-radius: 10px; /* Safari */
 }
 
 /*

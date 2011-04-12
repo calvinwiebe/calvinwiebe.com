@@ -1,5 +1,7 @@
 CalvinwiebeCom::Application.routes.draw do
 
+  get "intro/index"
+
   resources :project_entries
 
   resources :experience_entries
@@ -25,6 +27,8 @@ CalvinwiebeCom::Application.routes.draw do
   match 'projects' => 'projects#index';
   
   match 'info' => 'static_info#index', :as => :static_info
+  
+  match 'intro' => 'intro#index';
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -75,7 +79,7 @@ CalvinwiebeCom::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "about#index"
+  root :to => "intro#index"
 
   # See how all your routes lay out with "rake routes"
 
