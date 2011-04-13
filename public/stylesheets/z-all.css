@@ -92,7 +92,7 @@ a:hover {
 }
 
 #portfolio-items ul li a {
-    font-size: 20px;
+    font-size: 14px;
     text-decoration: none;
     color: white;
 }
@@ -170,7 +170,7 @@ a:hover {
 }
 
 #footer-bar-outer a {
-    font-size: 25px;
+    font-size: 16px;
 }
 
 #footer-aside {
@@ -261,14 +261,17 @@ a:hover {
 }
 
 #intro {
-    padding: 20px;
     background-color: #e3e3c4;
-    width: 500px;
+    width: 550px;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
     -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
     -webkit-border-radius: 10px; /* Safari */
+	vertical-align: text-top;
+}
+#intro span{
+	height: 400px;
 }
 
 /*
