@@ -53,12 +53,15 @@ a:hover {
 }
 #heading-name {
     font-size: 30px;
-    font-family: "Bookman Old Style";
+    font-family:Georgia;
     color: #808080;
     width: 300px;
     display: table-cell;
     text-align: left;
     height: 100%;
+}
+#heading-name h1 {
+		font-weight: normal;
 }
 #heading-name a{
 	text-decoration: none;
@@ -138,7 +141,9 @@ a:hover {
 	position: relative;
 	vertical-align: top;
 }
-
+#footer-stuff nav ul li{
+	margin-right: 20px;
+}
 #footer-bar-outer {
     text-align: left;
     width: 1000px;
@@ -186,6 +191,9 @@ a:hover {
 	border: solid 1px #caca8e;	
 	padding: 10px;
 }
+.about-text p, ul li{
+	font-size: 16px;
+}
 .about-text-section{
 	margin-bottom: 20px;
 }
@@ -222,7 +230,7 @@ a:hover {
 #info {
     padding: 20px;
     background-color: #e3e3c4;
-    width: 500px;
+    width: 700px;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
@@ -233,7 +241,7 @@ a:hover {
 #info ul {
 	font-size: 20px;
     list-style: none;
-    width: 300px;
+    width: 600px;
     margin: 0 auto;
 	padding: 0;
 }
