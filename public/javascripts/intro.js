@@ -18,6 +18,9 @@ var waver = function(spec){
 		context.moveTo(80,40);
 		context.bezierCurveTo(150,50,100,135,55,130);
 		context.bezierCurveTo(10,125,15,40,80,40);
+		context.fillStyle = "#B5D1EA";
+		context.fill();
+		context.fillStyle = "black";
 		//draw eyes
 		context.fillRect(60,60,3,3);
 		context.fillRect(90,65,3,3);

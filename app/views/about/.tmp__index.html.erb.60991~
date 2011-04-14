@@ -8,11 +8,16 @@
 		<div id="about-blurb-spacer"></div>
         <aside id="about-blurb-aside">
         	<section class="about-text-section">
-				<section class="about-blurb-text">
-					<header>Blurb</header>
-					<p>Hey! Thanks for visiting my personal webpage. My name is Calvin. I'm a programmer. I love to program stuff that either pops and looks amazing
-					or solves a problem efficiently. I think the web and mobile space are really interesting and powerful, and I want to get out there and be a part
-					of a team contributing to those spaces.</p>
+	            <header class="about-header">
+	            	blurb
+	            </header>
+				<section class="about-text">
+					<p>Heya! Welcome to my personal page. On this site you will find a little bit about my professional self, my education, and my career goals. Feel free
+					to browse around.</p>
+					
+					<p>Being a new computer science graduate, I have a great deal of ambition geared towards contributing to the fast world of technology. 
+					I am particularly interested in the web and mobile spaces. The lightweight, yet powerful, nature of the two is very appealing to me. The two have
+					definitely shaped my life, and I hope to help further shape the direction they go in. </p>
 				</section>
 			</section>
 			<section class="about-text-section">

@@ -182,21 +182,35 @@ a:hover {
 /*
  * about
  */
-.about-header{
+
+.about-blurb-text{
+	background-color: #e3e3c4;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
+    -webkit-border-radius: 10px; /* Safari */
+	padding: 15px;
+}
+.about-blurb-text header{
 	font-size: 20px;
 	margin-bottom: 10px;
+	color: #707034;
+}
+.about-text-section{
+	margin-bottom: 25px;
+
+}
+.about-header{
+	padding-left: 20px;
+	font-size: 15px;
+	color: #707034;
 }
 .about-text{
-	background-color: #e3e3c4;
-	border: solid 1px #caca8e;	
-	padding: 10px;
+		padding-left: 25px;
 }
 .about-text p, ul li{
 	font-size: 16px;
 }
-.about-text-section{
-	margin-bottom: 20px;
-}
+
 #about-blurb {
     display: table;
 }
