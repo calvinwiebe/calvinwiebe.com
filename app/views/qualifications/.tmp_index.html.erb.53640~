@@ -5,7 +5,7 @@
     <th>School</th>
     <th>Time period</th>
     <th>Certificate</th>
-    <th>Description Url</th>
+    <th>Description</th>
     <th>Comments</th>
     <th></th>
     <th></th>
@@ -17,7 +17,7 @@
     <td><%= qualification.school %></td>
     <td><%= qualification.time_period %></td>
     <td><%= qualification.certificate %></td>
-    <td><%= qualification.desc_partial_url %></td>
+    <td><%= qualification.description %></td>
     <td><%= qualification.comments %></td>
     <td><%= link_to 'Show', qualification %></td>
     <td><%= link_to 'Edit', edit_qualification_path(qualification) %></td>

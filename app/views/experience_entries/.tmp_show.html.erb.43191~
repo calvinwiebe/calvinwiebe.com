@@ -17,7 +17,7 @@
 
 <p>
   <b>Duties:</b>
-  <%= @experience_entry.duties_partial_url %>
+  <%= @experience_entry.duties %>
 </p>
 
 <p>

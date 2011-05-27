@@ -8,11 +8,10 @@
         <link rel="shortcut icon" href="/images/favicon.ico" />
     </head>
     <body>
-    	<div id="page">
         <header id="heading-stuff">
             <div id="heading-bar-outer">
                 <div id="heading-name">
-                    <a href="/"><h1><span class="white">c</span>alvin<span class="emphasized-name-letter"><span class="white">w</span>iebe</span></h1></a>
+                    <a href="/"><h1><span class="emphasized-name-letter">c</span>alvin<span class="emphasized-name-letter">w</span>iebe</h1></a>
                 </div>
                 <nav id="portfolio-items">
                     <ul>
@@ -43,11 +42,9 @@
                     <%= yield %>
                 </div>
             </div>
-			
+			<div class="clearfooter"></div>
         </div>
-		<div id="clearfooter"></div>
-		</div>
-				<footer id="footer-stuff">
+        <footer id="footer-stuff">
             <div id="footer-bar-outer">
                 <nav>
                     <ul>

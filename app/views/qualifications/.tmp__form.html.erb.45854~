@@ -24,8 +24,8 @@
     <%= f.text_field :certificate %>
   </div>
   <div class="field">
-    <%= f.label :desc_partial_url %><br />
-    <%= f.text_area :desc_partial_url %>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :comments %><br />

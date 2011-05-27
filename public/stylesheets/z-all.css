@@ -6,7 +6,7 @@ header, footer, aside, nav, article {
 }
 
 html,body {
-    background-color: #f7f7ee;
+    //background-color: #f7f7ee;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -25,12 +25,7 @@ a:hover {
  * header
  */
 #heading-stuff {
-    position: fixed;
-    _position: relative;
-    top: 0;
-    left: 0;
     height: 150px;
-    z-index: 12;
     width: 100%;
     vertical-align: bottom;
     text-align: center;
@@ -81,10 +76,11 @@ a:hover {
     margin: 0;
     padding: 0;
 }
-
+.white{
+	color: white;
+}
 .emphasized-name-letter {
-    font-weight: bold;
-    color: white;
+    font-weight: strong;
 }
 
 #portfolio-items li {
@@ -106,12 +102,18 @@ a:hover {
 /*
  * main content
  */
+#page{
+	width: 100%;
+	min-height:100%;
+	margin-bottom: -100px;
+	position: relative;
+}
 #content {
     text-align: center;
     width: 100%;
-	min-height: 100%;
+	/*min-height: 100%;
     margin-bottom: -100px;
-    position: relative;
+    position: relative;*/
 }
 #clearfooter{
 	height: 100px;
@@ -120,7 +122,8 @@ a:hover {
 #content-inner {
     text-align: left;
     width: 1000px;
-	padding: 250px;
+	padding-top: 100px;
+	padding-bottom: 150px;
     margin: 0 auto;
 }
 
@@ -135,7 +138,6 @@ a:hover {
  */
 #footer-stuff {
     height: 100px;
-    z-index: 12;
     width: 100%;
     text-align: center;
 	position: relative;
@@ -166,7 +168,7 @@ a:hover {
 
 #footer-bar-outer ul li {
     display: inline;
-    height: 150px;
+    height: 100px;
 }
 
 #footer-bar-outer a {
@@ -182,23 +184,38 @@ a:hover {
 /*
  * about
  */
-
+#about-content{
+}
+#about-blurb{
+	margin: 0 auto;
+}
+#about-blurb-aside{
+	width: 500px;
+	float: right;
+}
+#about-blurb-blurb{
+	float: left;
+	width: 500px;
+}
 .about-blurb-text{
-	background-color: #e3e3c4;
+	background-color: #ebebd3;
     border-radius: 10px;
     -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
     -webkit-border-radius: 10px; /* Safari */
-	padding: 15px;
+	padding: 25px;
+}
+.about-blurb-text p{
+	font-size: 15px;
 }
 .about-blurb-text header{
 	font-size: 20px;
 	margin-bottom: 10px;
 	color: #707034;
 }
-.about-text-section{
-	margin-bottom: 25px;
-
+.about-text-spacer{
+	height: 10px;
 }
+
 .about-header{
 	padding-left: 20px;
 	font-size: 15px;
@@ -209,29 +226,30 @@ a:hover {
 }
 .about-text p, ul li{
 	font-size: 16px;
+	margin-bottom: 10px;
+}
+.about-text a{
+	text-decoration: none;
+	font-family: "Courier New", Courier, monospace;
+	color: #808080;
+}
+.about-text a:hover{
+	color: black;
 }
 
-#about-blurb {
-    display: table;
-}
-#about-blurb-section{
-	display: table-cell;
-	width: 310px;
-}
 #about-blurb-spacer{
 	display: table-cell;
 	width: 50px;
 }
 #about-blurb-aside {
     vertical-align: top;
-    display: table-cell;
-    width: 650px;
 
 }
 #about-figure {
     margin: 0;
 	padding: 0;
 }
+
 
 /*
  * info
@@ -287,6 +305,55 @@ a:hover {
 #intro span{
 	height: 400px;
 }
+
+/*
+ * education
+ */
+.education{
+	margin-bottom:75px;
+}
+.qualification-certificate{
+	font-size:20px;
+	margin-bottom: 5px;
+}
+.qualification-school{
+	font-size:14px;
+	color:#808080;
+}
+
+/*
+ * experience
+ */
+.experience{
+	margin-bottom:75px;
+}
+.experience-title{
+	font-size:20px;
+	margin-bottom: 5px;
+}
+.experience-company{
+	font-size:14px;
+	color:#808080;
+}
+
+/*
+ * projects
+ */
+.project{
+	margin-bottom:75px;
+}
+.project-school{
+	font-size:20px;
+	margin-bottom: 5px;
+}
+.project-technologies{
+	font-size:14px;
+	color:#808080;
+}
+.project-description{
+	margin-bottom: 5px;
+}
+
 
 /*
  * colors

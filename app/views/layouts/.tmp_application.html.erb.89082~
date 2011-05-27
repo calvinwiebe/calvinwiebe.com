@@ -12,7 +12,7 @@
         <header id="heading-stuff">
             <div id="heading-bar-outer">
                 <div id="heading-name">
-                    <a href="/"><h1><span class="white">c</span>alvin<span class="emphasized-name-letter"><span class="white">w</span>iebe</span></h1></a>
+                    <a href="/"><h1><span class="emphasized-name-letter">c</span>alvin<span class="emphasized-name-letter">w</span>iebe</h1></a>
                 </div>
                 <nav id="portfolio-items">
                     <ul>

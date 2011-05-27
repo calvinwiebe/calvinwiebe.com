@@ -24,8 +24,8 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :duties_partial_url %><br />
-    <%= f.text_field :duties_partial_url %>
+    <%= f.label :duties %><br />
+    <%= f.text_field :duties %>
   </div>
   <div class="field">
     <%= f.label :comments %><br />

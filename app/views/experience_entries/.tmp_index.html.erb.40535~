@@ -5,7 +5,7 @@
     <th>Company</th>
     <th>Time period</th>
     <th>Title</th>
-    <th>Duties url</th>
+    <th>Duties</th>
     <th>Comments</th>
 	<th>Recentity</th>
     <th></th>
@@ -18,7 +18,7 @@
     <td><%= experience_entry.company %></td>
     <td><%= experience_entry.time_period %></td>
     <td><%= experience_entry.title %></td>
-    <td><%= experience_entry.duties_partial_url %></td>
+    <td><%= experience_entry.duties %></td>
     <td><%= experience_entry.comments %></td>
 	<td><%= experience_entry.recentity %></td>
     <td><%= link_to 'Show', experience_entry %></td>
