@@ -18,6 +18,7 @@ a {
 
 a:hover {
     background: none;
+	background-color: transparent;
     color: black;
 }
 
