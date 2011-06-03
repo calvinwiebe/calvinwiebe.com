@@ -31,13 +31,13 @@ var waver = function(spec){
 		context.lineWidth = 3;
 		context.stroke(); 
 		//draw text
-		context.font = "bold 40px serif";
+		context.font = "40px serif";
 		context.fillText("\"", 143, 65);
-		context.font = "bold 25px sans-serif";
+		context.font = "25px sans-serif";
 		context.fillText("Ohai! thanks for checkin'", 165, 60);
-		context.fillText("me out! :D", 200, 100);
-		context.font = "bold 40px serif";
-		context.fillText("\"", 322, 105);
+		context.fillText("me out! :D", 165, 100);
+		context.font = "40px serif";
+		context.fillText("\"", 288 , 105);
 	};
 	return that;
 }

@@ -39,7 +39,7 @@ a:hover {
     display: table;
     position: relative;
     vertical-align: text-bottom;
-    padding-top: 25px;
+    padding-top: 70px;
 }
 #header-strip{
 	width: 100%;
@@ -47,13 +47,14 @@ a:hover {
 	background-color: #B5D1EA;
 }
 #heading-name {
-    font-size: 30px;
-    font-family:Georgia;
+    font-size: 20px;
+    font-family: Courier;
     color: #808080;
-    width: 300px;
+    width: 600px;
     display: table-cell;
     text-align: left;
     height: 100%;
+	letter-spacing:-2px;
 }
 #heading-name h1 {
 		font-weight: normal;
