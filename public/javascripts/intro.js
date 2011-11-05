@@ -1,4 +1,4 @@
-var application = function(spec){
+var intro = function(spec){
 	var that = {};
 	that.start = function(){
 		spec.waver.draw();
@@ -32,12 +32,10 @@ var waver = function(spec){
 		context.stroke(); 
 		//draw text
 		context.font = "40px serif";
-		//context.fillText("\"", 143, 65);
 		context.font = "25px sans-serif";
 		context.fillText("Ohai! thanks for checkin'", 165, 60);
 		context.fillText("me out!", 165, 100);
 		context.font = "40px serif";
-		//context.fillText("\"", 288 , 105);
 		var openQuoteImg = new Image(); 
 		var closeQuoteImg = new Image();
 		openQuoteImg.onload = function(){  
@@ -52,10 +50,3 @@ var waver = function(spec){
 	return that;
 }
 
-window.onload = function(){
-	http://i822.photobucket.com/albums/zz147/sbj1811/open-quote.gif
-	var canvas = document.getElementById("intro-canvas");
-	var context = canvas.getContext("2d");
-	var app = application({ waver: waver({canvas: canvas, context: context})});
-	app.start();
-}
