@@ -3,7 +3,7 @@
     <head>
         <title>calvinwiebe</title>
 		<link href="http://calvinwiebe.heroku.com/stylesheets/scaffold.css" media="screen" rel="stylesheet" type="text/css">
-		<link href="http://localhost:3000/stylesheets/z-all.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="http://calvinwiebe.heroku.com/stylesheets/z-all.css" media="screen" rel="stylesheet" type="text/css">
 		<link href="http://calvinwiebe.heroku.com/stylesheets/lightbox.css" media="screen" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="http://calvinwiebe.heroku.com/javascripts/application.js"></script>
 		<script type="text/javascript" src="http://calvinwiebe.heroku.com/javascripts/prototype.js"></script>
@@ -22,7 +22,7 @@
         <header id="heading-stuff">
             <div id="heading-bar-outer">
                 <div id="heading-name">
-                    <a href="/"><h1><span class="white">calvinwiebe</span></h1></a>
+                    <a href="/"><h1><span class="white">$cd</span> calvinwiebe</h1></a>
                 </div>
                 <nav id="portfolio-items">
                     <ul>

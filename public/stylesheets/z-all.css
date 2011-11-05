@@ -26,7 +26,7 @@ a:hover {
  * header
  */
 #heading-stuff {
-    height: 120px;
+    height: 150px;
     width: 100%;
     vertical-align: bottom;
     text-align: center;
@@ -49,7 +49,7 @@ a:hover {
 }
 #heading-name {
     font-size: 20px;
-    font-family: Courier;
+    font-family: MetaBold, Trebuchet MS, sans-serif;
     color: #808080;
     width: 600px;
     display: table-cell;

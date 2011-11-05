@@ -32,17 +32,28 @@ var waver = function(spec){
 		context.stroke(); 
 		//draw text
 		context.font = "40px serif";
-		context.fillText("\"", 143, 65);
+		//context.fillText("\"", 143, 65);
 		context.font = "25px sans-serif";
 		context.fillText("Ohai! thanks for checkin'", 165, 60);
-		context.fillText("me out! :D", 165, 100);
+		context.fillText("me out!", 165, 100);
 		context.font = "40px serif";
-		context.fillText("\"", 288 , 105);
+		//context.fillText("\"", 288 , 105);
+		var openQuoteImg = new Image(); 
+		var closeQuoteImg = new Image();
+		openQuoteImg.onload = function(){  
+	    	context.drawImage(openQuoteImg,140,35);    
+	    };  
+	    closeQuoteImg.onload = function(){  
+	    	context.drawImage(closeQuoteImg,255,78);    
+	    };  
+	    openQuoteImg.src = 'http://localhost:3000/images/open_quote.gif'; 
+	    closeQuoteImg.src = 'http://localhost:3000/images/close_quote.gif';
 	};
 	return that;
 }
 
 window.onload = function(){
+	http://i822.photobucket.com/albums/zz147/sbj1811/open-quote.gif
 	var canvas = document.getElementById("intro-canvas");
 	var context = canvas.getContext("2d");
 	var app = application({ waver: waver({canvas: canvas, context: context})});
