@@ -1,4 +1,4 @@
-<p>Responsibilities</p>
+<p>Duties</p>
 <ul>
 	<li>Maintain and continue development of a automated testing system for Adobe LiveCycle GuideBuilder(an extension of Eclipse). The framework was a
 	combination of Borland SilkTest and an in house Python screen capturing tool.</li>
