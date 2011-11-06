@@ -1,8 +1,11 @@
 <% @experiences.each do |experience| %>
 	<div class="experience">
 		<div class="experience-title"><%= experience.title %></div>
-		<div class="experience-company"><%= experience.company %>(<%= experience.time_period %>)</div>
+		<div class="experience-company"><%= experience.company %> (<%= experience.time_period %>)</div>
 		<div class="experience-duties"><%= render :partial => experience.duties_partial_url %></div>
-		<div class="experience-comments"><strong>Comments: </strong><%= experience.comments %></div>
 	</div>
 <% end %>
+<script type="text/javascript">
+	exp = experience();
+	exp.start();
+</script>

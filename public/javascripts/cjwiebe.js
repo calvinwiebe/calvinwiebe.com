@@ -15,7 +15,9 @@ var application = function(){
 			var a = links[i].getElementsByTagName("a")[0];
 			a.setAttribute("style", "color: white");
 		}
-		selectedPage.setAttribute("style", "color: gray");
+		if(selectedPage){
+			selectedPage.setAttribute("style", "color: gray");
+		}
 	}
 	that.start = function(){
 		//add some click handlers to the portfolio links
@@ -54,12 +56,19 @@ var application = function(){
 	return that;
 }
 
+var experience = function(){
+	var that = {};
+	that.start = function(){
+		$$(".experience").first().addClassName("experience-current");
+	};
+	return that;	
+}
+
 //globals
 var app;
-
 //main function to kick off all the apps
 window.onload = function(){
-	console.log("hey");
+	//if on the intro page, run the intro js
 	var canvas = document.getElementById("intro-canvas");
 	if (canvas)
 	{
@@ -67,6 +76,7 @@ window.onload = function(){
 		var introApp = intro({ waver: waver({canvas: canvas, context: context})});
 		introApp.start();
 	}
+	//run the main application js
 	app = application();
 	app.start();
 }

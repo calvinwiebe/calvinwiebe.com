@@ -328,6 +328,7 @@ a:hover {
  */
 .experience{
 	margin-bottom:75px;
+	padding: 15px;
 }
 .experience-title{
 	font-size:20px;
@@ -336,6 +337,11 @@ a:hover {
 .experience-company{
 	font-size:14px;
 	color:#808080;
+}
+.experience-current{
+	background-color: #EEEEEE;
+	-moz-border-radius: 10px; /* Firefox 3.6 and earlier */
+	-webkit-border-radius: 10px; /* Safari */
 }
 
 /*
