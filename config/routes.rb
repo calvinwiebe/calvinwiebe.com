@@ -1,5 +1,7 @@
 CalvinwiebeCom::Application.routes.draw do
 
+  get "blog/index"
+
   get "intro/index"
 
   resources :project_entries
@@ -29,6 +31,8 @@ CalvinwiebeCom::Application.routes.draw do
   match 'info' => 'static_info#index', :as => :static_info
   
   match 'intro' => 'intro#index';
+  
+  match 'blog' => 'blog#index';
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

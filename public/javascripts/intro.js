@@ -31,11 +31,10 @@ var waver = function(spec){
 		context.lineWidth = 3;
 		context.stroke(); 
 		//draw text
-		context.font = "40px serif";
-		context.font = "25px sans-serif";
-		context.fillText("Ohai! thanks for checkin'", 165, 60);
-		context.fillText("me out!", 165, 100);
-		context.font = "40px serif";
+		//context.font = '50px "QuicksandBook"';
+		//context.fillText("Ohai! thanks for checkin'", 165, 60);
+		//context.fillText("me out!", 165, 100);
+		//context.font = "40px serif";
 		var openQuoteImg = new Image(); 
 		var closeQuoteImg = new Image();
 		openQuoteImg.onload = function(){  
@@ -44,8 +43,8 @@ var waver = function(spec){
 	    closeQuoteImg.onload = function(){  
 	    	context.drawImage(closeQuoteImg,255,78);    
 	    };  
-	    openQuoteImg.src = 'http://calvinwiebe.heroku.com/images/open_quote.gif'; 
-	    closeQuoteImg.src = 'http://calvinwiebe.heroku.com/images/close_quote.gif';
+	    //openQuoteImg.src = 'http://calvinwiebe.heroku.com/images/open_quote.gif'; 
+	    //closeQuoteImg.src = 'http://calvinwiebe.heroku.com/images/close_quote.gif';
 	};
 	return that;
 }

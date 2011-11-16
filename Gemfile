@@ -1,4 +1,6 @@
 source 'http://rubygems.org'
+# get the Tumblr api
+source 'http://gemcutter.org'
 
 gem 'rails', '3.0.6'
 
@@ -6,6 +8,7 @@ gem 'rails', '3.0.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'tumblr-api', '0.1.4'
 
 # Use unicorn as the web server
 # gem 'unicorn'
