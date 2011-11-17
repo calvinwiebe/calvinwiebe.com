@@ -4,14 +4,13 @@
 				<div class="post-title"><a href="<%= @posts[5][1] %>"><%= @posts[11][1] %></a></div>
 				<div class="post-body"><%= @posts[6][1].html_safe %></div>
 				<div class="post-time"><%= (Time.at(@posts[1][1].to_i)).strftime('%m-%d-%Y') %></div>
-				<div class="post-time"><%= (Time.at(@posts[1][1].to_i)).strftime('%m-%d-%Y') %></div>
 		</div>
 	<% else %>
 		<% @posts.each do |post| %>
 			<div class="post">
 				<div class="post-title"><%= post["regular_title"] %></div>
 				<div class="post-body"><%= post["regular_body"].html_safe %></div>
-				<div class="post-time"><%= post["unix_timestamp"].strftime('%m-%d-%Y') %></div>
+				<div class="post-time"><%= (Time.at(post["unix_timestamp"].to_i)).strftime('%m-%d-%Y') %></div>
 			</div>
 		<% end %>
 	<% end %>
