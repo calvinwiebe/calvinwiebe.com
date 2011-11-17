@@ -1,13 +1,14 @@
 source 'http://rubygems.org'
-# get the Tumblr api
-source 'http://gemcutter.org'
-
 gem 'rails', '3.0.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+
+# get the Tumblr api
+source 'http://gemcutter.org'
+
 gem 'tumblr-api', '0.1.4'
 
 # Use unicorn as the web server
