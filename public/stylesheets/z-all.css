@@ -69,6 +69,18 @@ canvas {
 }
 
 /**
+ * 	GLOBAL
+ */
+
+.blurb-header {
+	background-color: #eef2f7;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
+    -webkit-border-radius: 10px; /* Safari */
+	padding: 25px;
+}
+
+/**
  * header
  */
 #heading-stuff {
@@ -113,12 +125,21 @@ canvas {
 #heading-name a:hover{
 	background: none;
 }
-#portfolio-items {
-    display: table-cell;
-    width: 300px;
-    height: 100%;
-    text-align: right;
+#nav-stuff {
+	width: 100%;
+	background-color: #F3F6F9;
+	border-bottom: 1px solid #DCE5EE;
 }
+#portfolio-items-outer {
+	text-align: center;
+}
+#portfolio-items {
+    width: 770px;
+    height: 25px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 7px;
+ }
 
 #portfolio-items ul {
     list-style: none;
@@ -139,12 +160,12 @@ canvas {
 #portfolio-items ul li a {
     font-size: 14px;
     text-decoration: none;
-    color: white;
+    color: #a5abb2;
 }
 
 #portfolio-items a:hover {
     text-decoration: none;
-    color: gray;
+    color: black;
     background: none;
 }
 
@@ -240,13 +261,6 @@ canvas {
 }
 #about-blurb-blurb{
 	width: 770px;
-}
-.about-blurb-text{
-	background-color: #F7F7F2;
-    border-radius: 10px;
-    -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
-    -webkit-border-radius: 10px; /* Safari */
-	padding: 25px;
 }
 .about-blurb-text p{
 	font-size: 45px;
@@ -381,14 +395,11 @@ canvas {
 }
 
 #intro {
-    background-color: #F7F7F2;
-    text-align: left;
-    border-radius: 10px;
-    -moz-border-radius: 10px; /* Firefox 3.6 and earlier */
-    -webkit-border-radius: 10px; /* Safari */
 	padding: 40px;
 	position: relative;
 	margin: 0 auto;
+	text-align: left;
+	background-color: #F7F7F2;
 }
 #intro-inner{
 	height: 300px;

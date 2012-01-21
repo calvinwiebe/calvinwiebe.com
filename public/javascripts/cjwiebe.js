@@ -3,6 +3,8 @@
  */
 
 var application = function(){
+	var onhoverColor = "black";
+	var offhoverColor = "#a5abb2";
 	var that = {};
 	var selectedPage = null;
 	that.setSelectedPage = function(link){
@@ -13,10 +15,10 @@ var application = function(){
 		var links = portfolio.getElementsByTagName("li");
 		for(i = 0; i < links.length; i++){
 			var a = links[i].getElementsByTagName("a")[0];
-			a.setAttribute("style", "color: white");
+			a.setAttribute("style", "color: " + offhoverColor);
 		}
 		if(selectedPage){
-			selectedPage.setAttribute("style", "color: gray");
+			selectedPage.setAttribute("style", "color: " + onhoverColor);
 		}
 	}
 	that.start = function(){
@@ -30,10 +32,10 @@ var application = function(){
 				var links = portfolio.getElementsByTagName("li");
 				for(i = 0; i < l.length; i++){
 					var a = links[i].getElementsByTagName("a")[0];
-					a.setAttribute("style", "color: white");
+					a.setAttribute("style", "color: " + offhoverColor);
 				}
 				var a = this.getElementsByTagName("a")[0];
-				a.setAttribute("style", "color: gray");
+				a.setAttribute("style", "color:" + onhoverColor);
 				app.setSelectedPage(a);
 			}
 			l[i].onmouseover = function(){
@@ -42,10 +44,10 @@ var application = function(){
 				var links = portfolio.getElementsByTagName("li");
 				for(i = 0; i < l.length; i++){
 					var a = links[i].getElementsByTagName("a")[0];
-					a.setAttribute("style", "color: white");
+					a.setAttribute("style", "color: " + offhoverColor);
 				}
 				var a = this.getElementsByTagName("a")[0];
-				a.setAttribute("style", "color: gray");
+				a.setAttribute("style", "color: " + onhoverColor);
 			}
 			l[i].onmouseout = function(){
 				app.highlightSelectedPage();
