@@ -80,7 +80,7 @@ canvas {
 }
 
 #heading-bar-outer {
-    width: 700px;
+    width: 770px;
     height: 100%;
     margin: 0 auto;
     display: table;
@@ -115,7 +115,7 @@ canvas {
 }
 #portfolio-items {
     display: table-cell;
-    width: 700px;
+    width: 300px;
     height: 100%;
     text-align: right;
 }
