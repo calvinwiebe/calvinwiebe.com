@@ -337,10 +337,14 @@ canvas {
  */
 .post {
 	margin-bottom: 40px;
+	color: black;
+}
+.post a{
+	color: black;
 }
 .post-title {
-	font-size: 20px;
-	font-family: 'QuicksandBook';
+	font-size: 30px;
+	font-family: sans-serif, arial;
 }
 .post-body p {
 	font-size: 17px;

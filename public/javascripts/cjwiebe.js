@@ -37,6 +37,10 @@ var application = function(){
 				var a = this.getElementsByTagName("a")[0];
 				a.setAttribute("style", "color:" + onhoverColor);
 				app.setSelectedPage(a);
+				
+				//html5: add a history state to correctly use
+				//the back, forward and refresh buttons with AJAX
+				window.history.pushState({}, a.innerHTML, a.innerHTML);
 			}
 			l[i].onmouseover = function(){
 				//add some click handlers to the portfolio links
