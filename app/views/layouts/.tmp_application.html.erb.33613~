@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calvinwiebe</title>
+		<link href="http://calvinwie.be/stylesheets/scaffold.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="http://calvinwie.be/stylesheets/z-all.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="http://calvinwie.be/stylesheets/lightbox.css" media="screen" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/application.js"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/prototype.js"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/effects.js"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/builder.js"></script>
+	<script type="text/javascript" src="http://calvinwie.be/javascripts/scriptaculous.js?load=effects,builder"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/controls.js"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/lightbox.js"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/rails.js"></script>
+		<script type="text/javascript" src="http://calvinwie.be/javascripts/cjwiebe.js"></script>
+
+        <%= csrf_meta_tag %>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+    </head>
+    <body>
+    	<div id="page">
+        <header id="heading-stuff">
+            <div id="heading-bar-outer">
+                <div id="heading-name">
+                    <a href="/"><h1><span class="white">calvinwiebe</span></h1></a>
+                </div>
+                <nav id="portfolio-items">
+                    <ul>
+                        <li>
+                            <%= link_to "about", about_path, :remote => true, :id => "about_link" %>
+                        </li>
+                        <!--<li>
+                            <%= link_to "education", education_path, :remote => true %>
+                        </li>
+                        <li>
+                            <%= link_to "experience", experience_path, :controller => 'experience', :remote => true %>
+                        </li>-->
+						<li>
+                            <%= link_to "blog", blog_path, :remote => true %>
+                        </li>
+                        <li>
+                            <%= link_to "projects", projects_path, :remote => true %>
+                        </li>
+                        <li>
+                            <%= link_to "contact", static_info_path, :remote => true %>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header-strip">
+            </div>
+        </header>
+        <div id="content">
+            <div id="content-inner">
+                <div id="content-topic">
+                    <%= yield %>
+                </div>
+            </div>
+			
+        </div>
+		<div id="clearfooter"></div>
+		</div>
+				<footer id="footer-stuff">
+            <div id="footer-bar-outer">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="http://twitter.com/#!/calvinwiebe">twitter</a>
+                        </li>
+                        <li>
+                            <a href="http://ca.linkedin.com/pub/calvin-wiebe/1a/865/ab6">linkedin</a>
+                        </li>
+                    </ul>
+                </nav>
+                <aside id="footer-aside">
+                    <div>
+                        2011 Calvin Wiebe
+                    </div>
+                </aside>
+            </div>
+        </footer>
+    </body>
+</html>
