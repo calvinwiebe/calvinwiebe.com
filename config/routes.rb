@@ -28,7 +28,7 @@ CalvinwiebeCom::Application.routes.draw do
   
   match 'projects' => 'projects#index';
   
-  match 'info' => 'static_info#index', :as => :static_info
+  match 'contact' => 'static_info#index', :as => :static_info
   
   match 'intro' => 'intro#index';
   
