@@ -103,6 +103,8 @@ canvas {
 	letter-spacing: -2px;
 	text-shadow: #FFF 0px 0px 0px, #EEE 0px 0px 20px, #EEE 0px 0px 20px;
 	padding-bottom: 30px;
+	position: absolute;
+	top: 100px;
 }
 #heading-name h1 {
 	font-weight: 300;
@@ -136,6 +138,8 @@ canvas {
 	width: 100%;
 	background-color: #F3F6F9;
 	border-bottom: 1px solid #DCE5EE;
+	position: absolute;
+	z-index: 100;
 }
 #portfolio-items-outer {
 	text-align: center;
@@ -407,6 +411,9 @@ canvas {
 /*
  * intro
  */
+#browser-disclaimer {
+	margin-top: 20px;
+}
 #intro-outer {
 	text-align: center;
 }
