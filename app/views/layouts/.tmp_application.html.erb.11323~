@@ -3,7 +3,7 @@
     <head>
         <title>calvinwiebe</title>
 		<link href="http://calvinwie.be/stylesheets/scaffold.css" media="screen" rel="stylesheet" type="text/css">
-		<link href="http://calvinwie.be/stylesheets/z-all.css" media="screen" rel="stylesheet" type="text/css">
+		<!--<link href="http://calvinwie.be/stylesheets/z-all.css" media="screen" rel="stylesheet" type="text/css">-->
 		<link href="http://calvinwie.be/stylesheets/lightbox.css" media="screen" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="http://calvinwie.be/javascripts/application.js"></script>
 		<script type="text/javascript" src="http://calvinwie.be/javascripts/prototype.js"></script>
@@ -13,7 +13,9 @@
 		<script type="text/javascript" src="http://calvinwie.be/javascripts/controls.js"></script>
 		<script type="text/javascript" src="http://calvinwie.be/javascripts/lightbox.js"></script>
 		<script type="text/javascript" src="http://calvinwie.be/javascripts/rails.js"></script>
-		<script type="text/javascript" src="http://calvinwie.be/javascripts/cjwiebe.js"></script>
+		<!--<script type="text/javascript" src="http://calvinwie.be/javascripts/cjwiebe.js"></script>-->
+		<script type="text/javascript" src="http://localhost:3000/javascripts/cjwiebe.js"></script>
+		<link href="http://localhost:3000/stylesheets/z-all.css" media="screen" rel="stylesheet" type="text/css">
         <%= csrf_meta_tag %>
         <link rel="shortcut icon" href="/images/favicon.ico" />
     </head>

@@ -61,12 +61,17 @@ canvas {
  */
 
 .blurb-header {
-	background-color: #eef2f7;
+	background-color: #F8F7E8;
 	border-radius: 10px;
 	-moz-border-radius: 10px; /* Firefox 3.6 and earlier */
 	-webkit-border-radius: 10px; /* Safari */
 	padding: 25px;
 }
+
+.green {
+	color: #9AB854;
+}
+
 /**
  * header
  */
@@ -95,13 +100,11 @@ canvas {
 	vertical-align: bottom;
 	font-size: 40px;
 	font-family: QuicksandBook, MetaBold, Trebuchet MS, sans-serif;
-	color: #808080;
 	width: 600px;
 	display: table-cell;
 	text-align: left;
 	height: 100%;
 	letter-spacing: -2px;
-	text-shadow: #FFF 0px 0px 0px, #EEE 0px 0px 20px, #EEE 0px 0px 20px;
 	padding-bottom: 30px;
 	position: absolute;
 	top: 100px;
@@ -111,6 +114,7 @@ canvas {
 }
 #heading-name a {
 	text-decoration: none;
+	color: #09A4B8;
 }
 #heading-name a:hover {
 	background: none;
@@ -136,8 +140,8 @@ canvas {
 }
 #nav-stuff {
 	width: 100%;
-	background-color: #F3F6F9;
-	border-bottom: 1px solid #DCE5EE;
+	background-color: white;
+	/*border-bottom: 1px solid #DCE5EE;*/
 	position: absolute;
 	z-index: 100;
 }
@@ -156,9 +160,6 @@ canvas {
 	margin: 0;
 	padding: 0;
 }
-.white {
-	color: white;
-}
 .emphasized-name-letter {
 	font-weight: 300;
 }
@@ -168,7 +169,7 @@ canvas {
 #portfolio-items ul li a {
 	font-size: 14px;
 	text-decoration: none;
-	color: #a5abb2;
+	color: #C4C4BB;
 }
 #portfolio-items a:hover {
 	text-decoration: none;
@@ -216,8 +217,8 @@ canvas {
 	height: 150px;
 	text-align: center;
 	vertical-align: top;
-	background-color: #F3F6F9;
-	border-top: 1px solid #DCE5EE;
+	background-color: black;
+	border-top: 1px solid white;
 	position: relative;
 }
 #footer-links-outer {
@@ -241,15 +242,15 @@ canvas {
 #footer-links-outer ul li {
 	height: 100%;
 	margin-bottom: 5px;
-	color: #C53727;
+	color: #F6273F;
 }
 #footer-links-outer ul li a {
 	font-size: 16px;
-	color: #A5ABB2;
+	color: #484846;
 	cursor: pointer;
 }
 #footer-links-outer ul li a:hover{
-	color: black;
+	color: white;
 }
 #footer-stuff {
 	height: 100px;
@@ -362,17 +363,13 @@ canvas {
 }
 #info {
 	padding: 40px;
-	background-color: #F7F7F2;
 	width: 700px;
 	margin: 0 auto;
 	text-align: left;
-	border-radius: 10px;
-	-moz-border-radius: 10px; /* Firefox 3.6 and earlier */
-	-webkit-border-radius: 10px; /* Safari */
-	color: #666666;
+	color: #484846;
 }
 #info a {
-	color: #666666;
+	color: #484846;
 }
 #info ul {
 	list-style: none;
@@ -422,7 +419,7 @@ canvas {
 	position: relative;
 	margin: 0 auto;
 	text-align: left;
-	background-color: #F7F7F2;
+	background-color: #F8F7E8;
 }
 #intro-inner {
 	height: 300px;
@@ -497,5 +494,11 @@ canvas {
 /*
  * colors
  *
- * section backgrounds: #e3e3c4
+ * #F6273F pink
+ * #9AB854 green
+ * #09A4B8 turqoise
+ * #F8F7E8 white
+ * #C4C4BB grey
+ * #484846 dark grey
+ * 
  */
