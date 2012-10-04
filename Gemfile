@@ -10,6 +10,7 @@ gem 'sqlite3'
 source 'http://gemcutter.org'
 
 gem 'tumblr-api', '0.1.4'
+gem 'newrelic_rpm'
 
 # Use unicorn as the web server
 # gem 'unicorn'
