@@ -10,36 +10,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110411230016) do
+ActiveRecord::Schema.define(:version => 20110603030545) do
 
   create_table "experience_entries", :force => true do |t|
     t.string   "company"
     t.string   "time_period"
     t.string   "title"
-    t.string   "duties"
     t.string   "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "recentity"
+    t.string   "duties_partial_url"
   end
 
   create_table "project_entries", :force => true do |t|
     t.string   "name"
     t.string   "technologies"
-    t.string   "description"
     t.string   "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "qualifications", :force => true do |t|
     t.string   "school"
     t.string   "time_period"
     t.string   "certificate"
-    t.string   "description"
     t.string   "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "desc_partial_url"
   end
 
 end
