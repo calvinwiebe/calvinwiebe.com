@@ -8,13 +8,15 @@ var application = function()
 	var offhoverColor = "#C4C4BB";
 	var that = {};
 	var selectedPage = null;
+	that.loadingCircles = new LoadingCircles();
+	that.loadingCircles.hide();
 	that.setSelectedPage = function(link)
 	{
 		selectedPage = link;
 	}
 	that.highlightSelectedPage = function()
 	{
-		var portfolio = document.getElementById("portfolio-items");
+		var portfolio = $("portfolio-items");
 		var links = portfolio.getElementsByTagName("li");
 		for (i = 0; i < links.length; i++)
 		{
@@ -29,12 +31,13 @@ var application = function()
 	that.start = function()
 	{
 		//add some click handlers to the portfolio links
-		var p = document.getElementById("portfolio-items");
+		var p = $("portfolio-items");
 		var l = p.getElementsByTagName("li");
 		for (i = 0; i < l.length; i++)
 		{
 			l[i].onclick = function()
 			{
+				app.loadingCircles.animate();
 				var a = this.getElementsByTagName("a")[0];
 				app.setSelectedPage(a);
 				app.highlightSelectedPage();
@@ -49,7 +52,7 @@ var application = function()
 			l[i].onmouseover = function()
 			{
 				//add some click handlers to the portfolio links
-				var portfolio = document.getElementById("portfolio-items");
+				var portfolio = $("portfolio-items");
 				var links = portfolio.getElementsByTagName("li");
 				for (i = 0; i < l.length; i++)
 				{
@@ -68,6 +71,7 @@ var application = function()
 		//bind some window functions
 		window.onpopstate = function(event)
 		{
+			app.loadingCircles.animate();
 			var url;
 			//when we are redirected to home, just go to about
 			if (location.href == "/")
@@ -80,14 +84,15 @@ var application = function()
 			}
 			
 			new Ajax.Request(url, {
-				method: 'get'
+				method: 'get',
+				onSuccess: function() {
+					app.loadingCircles.hide();	
+				}
 			});
-			
-			console.log("onpopstate");
 			
 			if (event.state)
 			{
-				var a = document.getElementById(event.state.id);
+				var a = $(event.state.id);
 				app.setSelectedPage(a);
 				app.highlightSelectedPage();
 			}
@@ -98,7 +103,7 @@ var application = function()
 		{
 			//we have come to this page by a non AJAX request
 			//set the proper selected page
-			var p = document.getElementById("portfolio-items");
+			var p = $("portfolio-items");
 			var l = p.getElementsByTagName("li");
 			for (i = 0; i < l.length; i++)
 			{
@@ -111,6 +116,82 @@ var application = function()
 			}
 		}
 	};
+	return that;
+}
+
+var LoadingCircles = function()
+{
+	var that = {};
+	var _self = $("loadingCircle");
+	var circles = [];
+	var intervals = [];
+	var timeouts = [];
+	var circleDoms = _self.childElements().grep(new Selector(".circle"));
+	circleDoms.each(function (circle) {
+		circles.push(new Circle(circle));
+	}, that);
+	that.animate = function()
+	{
+		var stagger = 400;
+		var interval = 2000;
+		var c = circles;
+		var context = this;
+		var f = function() {
+			c.each(function (circle, i) {
+				var t = function() {
+					circle.show();
+					circle.animate();
+				}
+				timeouts.push(setTimeout(t, stagger * i));
+			}, context);
+		};
+		f();
+		intervals.push(setInterval(f, interval));
+	};
+	that.hide = function()
+	{
+		circles.each(function (circle) {
+			circle.hide();
+		}, this);
+		timeouts.each(function (timeout) {
+			clearTimeout(timeout);
+		});
+		timeouts = [];
+		clearInterval(intervals.pop());
+	}
+	return that;
+}
+
+var Circle = function(elem)
+{
+	var that = {};
+	var _self = $(elem);
+	that.animate = function()
+	{
+		var c = _self;
+		new Effect.Opacity(c.id, {
+			from: 0,
+			to: 0.9,
+			afterFinish: function() {
+				new Effect.Opacity(c.id, {
+					from: 0.9,
+					to: 0	
+				});
+			} 
+		});
+	}
+	that.hide = function()
+	{
+		_self.setStyle({
+			visibility: "hidden"
+		});
+	}
+	that.show = function()
+	{
+		_self.setStyle({
+			visibility: "visible"
+		});
+	}
 	return that;
 }
 
@@ -138,7 +219,7 @@ window.onunload = function(event)
 
 window.onload = function(){
 	//if on the intro page, run the intro js
-	var canvas = document.getElementById("intro-canvas");
+	var canvas = $("intro-canvas");
 	if (canvas)
 	{
 		var context = canvas.getContext("2d");

@@ -176,6 +176,18 @@ canvas {
 	color: black;
 	background: none;
 }
+#loadingCircle {
+	margin-top: 35px;
+}
+#loadingCircle .circle {
+	display: inline-block;
+	opacity: 0;
+	width: 10px; height: 10px;
+	margin-right: 5px;
+    -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+    background-color: #09A4B8;
+}
+//#heading-name { opacity: 0; }
 /*
  * main content
  */
