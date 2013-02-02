@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-gem 'rails', '3.0.6'
+gem 'rails', '3.0.20'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -10,7 +10,7 @@ gem 'sqlite3'
 source 'http://gemcutter.org'
 
 gem 'tumblr-api', '0.1.4'
-gem 'newrelic_rpm'
+gem 'newrelic_rpm', '3.5.5.38'
 
 # Use unicorn as the web server
 # gem 'unicorn'
