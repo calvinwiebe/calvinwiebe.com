@@ -1,9 +1,0 @@
-<% @experiences.each do |experience| %>
-	<div class="experience">
-		<div class="experience-company"><strong>Company: </strong><%= experience.company %></div>
-		<div class="experience-time"><strong>Time Period: </strong><%= experience.time_period %></div>
-		<div class="experience-title"><strong>Title: </strong><%= experience.title %></div>
-		<div class="experience-duties"><%= render :partial => experience.duties_partial_url %></div>
-		<div class="experience-comments"><strong>Comments: </strong><%= experience.comments %></div>
-	</div>
-<% end %>

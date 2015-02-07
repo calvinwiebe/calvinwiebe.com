@@ -1,2 +1,0 @@
-module StaticInfoHelper
-end

@@ -1,5 +1,0 @@
-<h1>New experience_entry</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', experience_entries_path %>

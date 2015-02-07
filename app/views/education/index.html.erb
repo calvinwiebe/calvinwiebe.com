@@ -1,8 +1,0 @@
-<% @qualifications.each do |qualification| %>
-	<div class="qualification">
-		<div class="qualification-certificate"><%= qualification.certificate %></div>
-		<div class="qualification-school"><%= qualification.school %>(<%= qualification.time_period %>)</div>
-		<div class="qualification-description"><%= render :partial => qualification.desc_partial_url %></div>
-		<div class="qualification-comments"><strong>Comments: </strong><%= qualification.comments %></div>
-	</div>
-<% end %>

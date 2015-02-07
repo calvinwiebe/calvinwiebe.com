@@ -1,0 +1,76 @@
+/* Index Styles */
+body, html {
+    font-family: fira-sans, Helvetica;
+    text-align: center;
+}
+
+.content {
+    width: 666px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*  calvin  */
+.name-title .name {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000000;
+    letter-spacing: 2.69px;
+    line-height: 68px;
+}
+
+/*  {software developer: */
+.name-title .occupation {
+    font-weight: 100;
+    font-size: 48px;
+    color: #727272;
+    line-height: 68px;
+}
+
+/* avatar */
+.avatar img {
+    width: 100px;
+}
+
+/* What’s up lately?: */
+.detail .whats-up {
+    font-size: 24px;
+    color: #9C27B0;
+    line-height: 51px;
+}
+
+/* Doing some full stac: */
+.detail .answer {
+    font-size: 24px;
+    color: #212121;
+    line-height: 51px;
+}
+
+.icon-bar {
+    text-align: left;
+}
+
+/* distribute icons evely horizontally
+   suppose to be a nice way to do it with `justify` and
+   an ::after element. It is not working...
+*/
+.icon-bar a {
+    margin-right: 109px;
+}
+
+.icon-bar a.four {
+    margin-right: 0px;
+}
+
+.detail .icon-bar img {
+    height: 75px;
+}
+
+.detail .icon-bar a:hover {
+    opacity: .6;
+}

@@ -1,9 +1,0 @@
-page.select('#content-topic').each do |item|
-  item.setAttribute('style','opacity:0;')
-end
-
-page.replace_html('content-topic', :partial => 'index')
-
-page.visual_effect :appear,'content-topic',:duration => 0.5
-
-page << "app.loadingCircles.hide()"

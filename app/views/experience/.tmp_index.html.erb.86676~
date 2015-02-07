@@ -1,3 +1,0 @@
-<% @experiences.each do |experience| %>
-	<%= experience %>
-<% end %>

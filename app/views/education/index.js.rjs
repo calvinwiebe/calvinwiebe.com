@@ -1,3 +1,0 @@
-page.replace_html('content-topic', :partial => 'index')
-
-

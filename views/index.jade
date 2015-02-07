@@ -1,0 +1,36 @@
+extends layout
+
+block css
+    link(rel='stylesheet', href='/stylesheets/index.css')
+
+block javascripts
+    script(src="//use.typekit.net/hwn7dnm.js")
+    script.
+        try{Typekit.load();}catch(e){}
+
+block content
+    .content
+        .header
+            h1.name-title
+                span.name calvin
+                span.occupation {software developer}
+
+            .avatar
+                img(src='/images/avatar.png')
+
+        .detail
+            p
+                span.whats-up What's up lately?
+                span.answer   Doing some full stack web dev in Ottawa :)
+            .icon-bar
+                a.one(href='http://github.com/calvinwiebe')
+                    img(src='/images/icon-code.png')
+                a.two(href='mailto:calvin.wiebe@gmail.com')
+                    img(src='/images/icon-mail.png')
+                a.three(href='http://twitter.com/calvinwiebe')
+                    img(src='/images/icon-twitter.png')
+                a.four(href='http://ca.linkedin.com/in/calvinwiebe/en')
+                    img(src='/images/icon-linkedin.png')
+
+
+
