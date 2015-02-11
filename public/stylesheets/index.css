@@ -1,8 +1,21 @@
-/* Index Styles */
+/*
+
+Global
+
+*/
+
+
 body, html {
     font-family: fira-sans, Helvetica;
     text-align: center;
 }
+
+
+/*
+
+Layout
+
+*/
 
 .content {
     width: 666px;
@@ -17,38 +30,11 @@ body, html {
 /*  calvin  */
 .name-title .name {
     margin-right: 5px;
-    font-weight: 700;
-    font-size: 48px;
-    color: #000000;
-    letter-spacing: 2.69px;
-    line-height: 68px;
-}
-
-/*  {software developer: */
-.name-title .occupation {
-    font-weight: 100;
-    font-size: 48px;
-    color: #727272;
-    line-height: 68px;
 }
 
 /* avatar */
 .avatar img {
     width: 100px;
-}
-
-/* What’s up lately?: */
-.detail .whats-up {
-    font-size: 24px;
-    color: #9C27B0;
-    line-height: 51px;
-}
-
-/* Doing some full stac: */
-.detail .answer {
-    font-size: 24px;
-    color: #212121;
-    line-height: 51px;
 }
 
 .icon-bar {
@@ -71,6 +57,123 @@ body, html {
     height: 75px;
 }
 
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .content {
+        width: 400px;
+    }
+
+    /* avatar */
+    .avatar img {
+        width: 200px;
+    }
+
+
+    .icon-bar {
+        text-align: center;
+    }
+
+    .icon-bar a {
+        margin-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .avatar img {
+        width: 100px;
+    }
+
+    .icon-bar a {
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .detail .icon-bar img {
+        height: inherit;
+        width: 100px;
+    }
+
+}
+
+/*
+
+Style
+
+*/
+
+.name-title {
+    font-size: 48px;
+}
+
+/*  calvin  */
+.name-title .name {
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 2.69px;
+    line-height: 68px;
+}
+
+/*  {software developer: */
+.name-title .occupation {
+    font-weight: 100;
+    color: #727272;
+    line-height: 68px;
+}
+
+/* What’s up lately?: */
+.detail .whats-up {
+    font-size: 24px;
+    color: #9C27B0;
+    line-height: 51px;
+}
+
+/* Doing some full stac: */
+.detail .answer {
+    font-size: 24px;
+    color: #212121;
+    line-height: 51px;
+}
+
 .detail .icon-bar a:hover {
     opacity: .6;
+}
+
+@media screen and (max-width: 768px) {
+
+    .name-title {
+        font-size: 36px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .name-title {
+        font-size: 20px;
+    }
+
 }
