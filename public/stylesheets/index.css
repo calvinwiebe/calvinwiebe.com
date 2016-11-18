@@ -168,7 +168,7 @@ Style
 }
 
 .email a {
-    font-family: FiraSans-Light;
+    font-weight: 100;
     font-size: 24px;
     color: #4A4A4A;
     text-decoration: none;
