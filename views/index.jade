@@ -10,35 +10,30 @@ block javascripts
 
 block content
     .content
-        .header
-            h1.name-title
-                span.name calvin
-                span.occupation {software developer}
-
+        .top
+            .blurb
+                .crush
+                    span.bold crush
+                    span.light code
+                .drink
+                    span.bold drink
+                    span.light coffee
+                .enjoy
+                    span.bold enjoy
+                    span.light beer
+                .always
+                    span.bold alwys
+                    span.light <3
             .avatar
                 img(src='/images/avatar.png')
-
-        .detail
-            p.desktop-only
-                span.whats-up What's up lately?
-                span.answer   Doing some full stack web dev in Ottawa :)
+        .bottom
+            .email
+                a.hoverable.mailto(href='mailto:calvin.wiebe@gmail.com')
+                    | calvin.wiebe@gmail.com
             .icon-bar
-                a.one(href='http://github.com/calvinwiebe')
-                    img(src='/images/github.svg')
-                a.two(href='http://twitter.com/calvinwiebe')
-                    img(src='/images/twitter.svg')
-                a.three(href='http://ca.linkedin.com/in/calvinwiebe/en')
+                a.hoverable.linkedin(href='http://ca.linkedin.com/in/calvinwiebe/en')
                     img(src='/images/linkedin.svg')
-                a.four(href='mailto:calvin.wiebe@gmail.com')
-                    img(src='/images/send.svg')
-
-        //- Style and add this at some point
-        //- .footer
-        //-     div Icons made by
-        //-         a(href="http://www.google.com" title="Google") Google
-        //-         from
-        //-         a(href="http://www.flaticon.com" title="Flaticon") flaticon
-        //-         is licensed by
-        //-         a(href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0") CC BY 3.0
-
-
+                a.hoverable.twitter(href='http://twitter.com/calvinwiebe')
+                    img(src='/images/twitter.svg')
+                a.hoverable.github(href='http://github.com/calvinwiebe')
+                    img(src='/images/github.svg')

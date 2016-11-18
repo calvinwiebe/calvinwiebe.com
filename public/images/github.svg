@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="99px" height="99px" viewBox="0 0 99 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>Oval 4 + {}</title>
+
+<svg width="32px" height="32px" viewBox="718 455 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop-HD-Normal" sketch:type="MSArtboardGroup" transform="translate(-231.000000, -693.000000)">
-            <g id="Oval-4-+-{}" sketch:type="MSLayerGroup" transform="translate(232.000000, 694.000000)">
-                <circle id="Oval-4" stroke="#9C27B0" stroke-width="2" sketch:type="MSShapeGroup" cx="48.5" cy="48.453125" r="48"></circle>
-                <text id="{}" sketch:type="MSTextLayer" font-family="Monaco" font-size="48" font-weight="normal" fill="#9C27B0">
-                    <tspan x="19" y="62.8125">{}</tspan>
-                </text>
-            </g>
-        </g>
+    <g id="social-1_logo-github" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(718.000000, 455.000000)">
+        <path d="M16,0.4 C7.2,0.4 0,7.6 0,16.4 C0,23.5 4.6,29.5 10.9,31.6 C11.7,31.7 12,31.3 12,30.8 L12,28.1 C7.5,29.1 6.6,26 6.6,26 C5.9,24.2 4.8,23.7 4.8,23.7 C3.3,22.7 4.9,22.7 4.9,22.7 C6.5,22.8 7.4,24.3 7.4,24.3 C8.8,26.7 11.1,26 12.1,25.6 C12.2,24.6 12.7,23.9 13.1,23.5 C9.5,23.1 5.8,21.7 5.8,15.6 C5.8,13.9 6.4,12.4 7.4,11.3 C7.2,10.9 6.7,9.3 7.6,7.1 C7.6,7.1 8.9,6.7 12,8.7 C13.3,8.3 14.6,8.2 16,8.2 C17.4,8.2 18.7,8.4 20,8.7 C23.1,6.6 24.4,7 24.4,7 C25.3,9.2 24.7,10.8 24.6,11.2 C25.6,12.3 26.2,13.7 26.2,15.5 C26.2,21.6 22.5,23 18.9,23.4 C19.5,23.9 20,24.9 20,26.4 L20,30.8 C20,31.2 20.3,31.7 21.1,31.6 C27.4,29.5 32,23.5 32,16.4 C32,7.6 24.8,0.4 16,0.4 Z" id="Shape" fill="#444444"></path>
     </g>
 </svg>
